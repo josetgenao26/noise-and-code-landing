@@ -5,6 +5,11 @@ A bold, brutalist-inspired landing page built with [Astro](https://astro.build/)
 
 ![Preview](./screenshot.webp)
 
+## 📸 Live Preview
+
+Check out the live site here:
+👉 [https://noise-and-code-landing.vercel.app](https://noise-and-code-landing.vercel.app)
+
 ---
 
 ## 🚀 Tech Stack
