@@ -1,1 +1,69 @@
 @import "tailwindcss";
+
+body {
+  font-family: "Space Mono", monospace;
+  background-color: oklch(0% 0 0);
+  color: oklch(92.191% 0.0001 271.152);
+}
+
+.font-unbounded {
+  font-family: "Unbounded", sans-serif;
+}
+
+.glitch {
+  animation: glitch 1.5s linear infinite;
+}
+@keyframes glitch {
+  2%,
+  64% {
+    transform: translate(2px, 0) skew(0deg);
+  }
+
+  4%,
+  60% {
+    transform: translate(-2px, 0) skew(0deg);
+  }
+
+  62% {
+    transform: translate(0, 0) skew(5deg);
+  }
+}
+
+.glitch-hover:hover {
+  animation: glitch 1.5s linear infinite;
+}
+
+.text-shadow-red {
+  text-shadow: 2px 2px oklch(53.625% 0.17986 35.359), 4px 4px oklch(0% 0 0);
+}
+
+.word-by-word > span {
+  opacity: 0;
+  animation: fadeInWord 0.5s forwards;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee {
+  animation: marquee 30s linear infinite;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

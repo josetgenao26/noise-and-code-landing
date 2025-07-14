@@ -9,6 +9,8 @@
     "astro": "astro"
   },
   "dependencies": {
+    "@fontsource-variable/unbounded": "^5.2.6",
+    "@fontsource/space-mono": "^5.2.8",
     "@tailwindcss/vite": "^4.1.11",
     "astro": "^5.11.0",
     "tailwindcss": "^4.1.11"
