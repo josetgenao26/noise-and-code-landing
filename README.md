@@ -1,52 +1,95 @@
-# Astro Starter Kit: Basics
+# Noise & Code — Astro Landing Page
 
-```sh
-bun create astro@latest -- --template basics
+**Beautifully Brutal Digital Experiences**
+A bold, brutalist-inspired landing page built with [Astro](https://astro.build/) and [Tailwind CSS](https://tailwindcss.com/), featuring glitch effects, video background, and expressive typography.
+
+![Preview](./screenshot.webp)
+
+---
+
+## 🚀 Tech Stack
+
+- ⚡ [Astro](https://astro.build/)
+- 🎨 Tailwind CSS (CDN or configured via config)
+- 🎥 Hero background video (from Pexels)
+- 🧠 Custom fonts: Unbounded + Space Mono
+- 🌈 CSS variables for custom theming
+- ✅ Fully static exportable
+
+---
+
+## 📁 Project Structure
+
 ```
-
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/basics/devcontainer.json)
-
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
-
-![just-the-basics](https://github.com/withastro/astro/assets/2244813/a0a5533c-a856-4198-8470-2d67b1d7c554)
-
-## 🚀 Project Structure
-
-Inside of your Astro project, you'll see the following folders and files:
-
-```text
 /
-├── public/
-│   └── favicon.svg
-├── src
-│   ├── assets
-│   │   └── astro.svg
-│   ├── components
-│   │   └── Welcome.astro
-│   ├── layouts
-│   │   └── Layout.astro
-│   └── pages
-│       └── index.astro
-└── package.json
+├── public/                  # Static files (images, video, favicon, etc.)
+│   └── hero-video.mp4
+├── src/
+│   ├── components/          # Astro components (Header, Hero, etc.)
+│   ├── pages/
+│   │   └── index.astro      # Main landing page
+│   └── styles/              # Global styles (if extracted)
+├── astro.config.mjs         # Astro configuration
+├── tailwind.config.js       # Tailwind theme customization
+├── package.json             # Project metadata and scripts
+└── README.md
 ```
 
-To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
+---
 
-## 🧞 Commands
+## 🧪 Local Development
 
-All commands are run from the root of the project, from a terminal:
+1. **Install dependencies**
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `bun install`             | Installs dependencies                            |
-| `bun dev`             | Starts local dev server at `localhost:4321`      |
-| `bun build`           | Build your production site to `./dist/`          |
-| `bun preview`         | Preview your build locally, before deploying     |
-| `bun astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `bun astro -- --help` | Get help using the Astro CLI                     |
+```bash
+npm install
+```
 
-## 👀 Want to learn more?
+2. **Run the dev server**
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+```bash
+npm run dev
+```
+
+Visit `http://localhost:4321` to view the site.
+
+---
+
+## 🏗️ Build for Production
+
+```bash
+npm run build
+```
+
+The final static output will be in the `dist/` folder.
+
+You can preview the production build locally with:
+
+```bash
+npm run preview
+```
+
+---
+
+## 🌍 Deployment
+
+Deploy the contents of the `dist/` folder to any static hosting service:
+
+- Vercel
+- Netlify
+- GitHub Pages
+- Cloudflare Pages
+- Firebase Hosting
+
+---
+
+## 📬 Contact
+
+Want to collaborate or hire us?
+📩 **josetgenao26@gmail.com**
+
+---
+
+## 📄 License
+
+MIT © 2025 Jose Tomas Genao Casilla
