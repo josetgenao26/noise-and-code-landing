@@ -1,9 +1,16 @@
 @import "tailwindcss";
 
+:root {
+  --burned-red: oklch(39.984% 0.16408 29.223);
+  --cream: oklch(96.357% 0.03268 107.057);
+  --dark-cream: oklch(87.742% 0.04317 84.555);
+  --black: oklch(0% 0 0);
+}
+
 body {
   font-family: "Space Mono", monospace;
-  background-color: oklch(0% 0 0);
-  color: oklch(92.191% 0.0001 271.152);
+  background-color: var(--black);
+  color: var(--cream);
 }
 
 .font-unbounded {
@@ -13,6 +20,7 @@ body {
 .glitch {
   animation: glitch 1.5s linear infinite;
 }
+
 @keyframes glitch {
   2%,
   64% {
@@ -34,7 +42,7 @@ body {
 }
 
 .text-shadow-red {
-  text-shadow: 2px 2px oklch(53.625% 0.17986 35.359), 4px 4px oklch(0% 0 0);
+  text-shadow: 2px 2px var(--burned-red), 4px 4px var(--black);
 }
 
 .word-by-word > span {
@@ -46,7 +54,6 @@ body {
   0% {
     transform: translateX(0);
   }
-
   100% {
     transform: translateX(-50%);
   }
